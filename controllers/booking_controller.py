@@ -2,6 +2,8 @@ from fastapi import APIRouter, Depends, HTTPException
 
 from dependencies import get_token_header
 from entities.booking import Booking
+from repos.implementations.booking_repo import Booking_Repo
+from repos.implementations.room_repo import Room_Repo
 from services.implementations.booking_service import Booking_Service
 
 router = APIRouter(
